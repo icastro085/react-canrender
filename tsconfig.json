@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
+    "strict": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowJs": true,
-    "noEmit": true,
+    "noEmit": false,
     "sourceMap": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
@@ -11,17 +12,22 @@
     "downlevelIteration": true,
     "allowUmdGlobalAccess": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./dist",
 
     "outDir": "./dist/",
     "baseUrl": "src",
 
     "moduleResolution": "Node",
     "module": "ESNext",
-    "target": "ESNext",
-    "jsx": "react"
+    "target": "ES2015",
+    "jsx": "react",
+
+    "lib": ["ES2015", "ES2016", "DOM"],
+    "types": ["react", "node", "jest"]
   },
   "include": [
-    "src/**/*"
+    "./src"
   ],
   "exclude": [
     "node_modules"

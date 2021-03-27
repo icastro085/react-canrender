@@ -7,6 +7,7 @@ on:
     - "**.jsx"
     - "**.ts"
     - "**.tsx"
+    - "**.yml"
 
     branches:
     - "feature/**"
@@ -16,15 +17,18 @@ jobs:
     name: Feature
     runs-on: ubuntu-latest
     steps:
-      - name: GitHub Checkout
-        uses: actions/checkout@v2
-      - name: Setup Nodejs
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: "14"
       - name: Install Dependencies
-        run: npm install
+        run: yarn
       - name: Lint
-        run: npm run lint
+        run: yarn lint
       - name: Test
-        run: npm run test
+        run: yarn test
+      - name: Coverage
+        run: yarn coverage
+      - name: Codecov
+        uses: codecov/codecov-action@v1
+
