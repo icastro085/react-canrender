@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "allowUmdGlobalAccess": true,
+    "allowSyntheticDefaultImports": true,
+
+    "outDir": "./dist/",
+    "baseUrl": "src",
+
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
