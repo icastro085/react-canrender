@@ -1,6 +1,6 @@
 {
   "name": "@icastro085/react-canrender",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "main": "dist/index.js",
   "author": "Ivanildo de Castro <ivanildo.decastro085@gmail.com>",
   "license": "MIT",

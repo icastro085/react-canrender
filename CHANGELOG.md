@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.1-alpha.1 (2021-03-28)
+
+
+### Features
+
+* adding git user ([1f196d0](https://github.com/icastro085/react-canrender/commit/1f196d01eea5ebdefd5aaeb1e538b9db1d3913ff))
+
 ### 0.0.1-alpha.0 (2021-03-28)
 
 
