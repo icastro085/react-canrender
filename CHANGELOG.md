@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.3 (2021-03-28)
+
+
+### Bug Fixes
+
+* markdown syntax ([53c38a3](https://github.com/icastro085/react-canrender/commit/53c38a34dd5f1bf0584ddf7127d0d7f18dfc554b))
+
 ### 0.0.2 (2021-03-28)
 
 ### 0.0.1 (2021-03-28)
