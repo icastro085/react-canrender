@@ -74,6 +74,7 @@ const Container = () => (
     <ElseRender>It will not render.</ElseRender>
   </CanRender>
 );
+```
 
 ## Run tests
 
