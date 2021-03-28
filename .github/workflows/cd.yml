@@ -1,17 +1,22 @@
 name: CD
 
 on: 
-  pull_request:
-    branches: [main]
-    types: [closed]
+  push:
+    branches:
+    - main
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true
     name: Deploy
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - name: GitHub User
+      run: |
+        git config --global user.email "ivanildo.decastro085@gmail.com"
+        git config --global user.name "Ivanildo de Castro"
+
     - uses: actions/setup-node@v2
       with:
         node-version: "14"
@@ -25,11 +30,22 @@ jobs:
 
     - name: Test
       run: yarn test
+    
+    - name: Coverage
+      run: yarn coverage
 
-    # - name: Release
-    #   run: yarn release --prerelease alpha
+    - name: Codecov
+      uses: codecov/codecov-action@v1
+    
+    - name: Build
+      run: yarn build
 
-    # - name: Publish
-    #   run: npm publish --access public
-    #   env:
-    #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Release
+      run: |
+        yarn release --prerelease alpha
+        git push --follow-tags origin main
+
+    - name: Publish
+      run: npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
