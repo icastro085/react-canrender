@@ -89,6 +89,8 @@ yarn test
 * Github: [@icastro085](https://github.com/icastro085)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/icastro085\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/icastro085\/)
 
+* Demo: [https://codesandbox.io/s/react-canrender-wcimd](https://codesandbox.io/s/react-canrender-wcimd)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
