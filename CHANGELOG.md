@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.1 (2021-03-28)
+
+
+### Bug Fixes
+
+* npm publish ([064ced3](https://github.com/icastro085/react-canrender/commit/064ced3ae09d941c7b0a4f9984430c6048f099be))
+
 ### 0.0.1-alpha.2 (2021-03-28)
 
 ### 0.0.1-alpha.1 (2021-03-28)
