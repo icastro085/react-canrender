@@ -4,6 +4,14 @@
   "main": "dist/index.js",
   "author": "Ivanildo de Castro <ivanildo.decastro085@gmail.com>",
   "license": "MIT",
+  "keywords": ["react", "typescript"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icastro085/react-canrender.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "test": "jest",
     "coverage": "yarn test --coverage",
