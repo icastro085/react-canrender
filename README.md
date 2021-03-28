@@ -5,39 +5,75 @@
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/icastro085/react-canrender#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/icastro085/react-canrender/graphs/commit-activity)
 
-> A small component to help render other components according a condition
-
-## Prerequisites
-
-- node >=14
+### A small component to help render other components according a condition
 
 ## Install
 
+### npm
 ```sh
 npm i @icastro085/react-canrender
 ```
 
-## What does this component do
-Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:
+### yarn
+```sh
+yarn add @icastro085/react-canrender
+```
+
+## Usage example
+
+### Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:
 
 ```jsx
-const Bar = ({ name }) => (
+const Container = ({ name }) => (
   <div>
     {name ? <span>My name is {name}!</span> : <span>Sorry, the name is missing.</span>}
   </div>
 );
 ```
 
-With `React-CanRend` you can rewrite this into a more readable:
+### With `React-CanRender` you can rewrite this into a more readable:
 
 ```jsx
-const Bar = ({ name }) => (
+const Container = ({ name }) => (
   <CanRender when={name?.length}>
     My name is {name}!
     <ElseRender>Sorry, the name is missing.</ElseRender>
   </CanRender>
 );
 ```
+## CanRender
+
+```jsx
+const Container = () => (
+  <CanRender when={true}>
+    Content to render when condition is true
+  </CanRender>
+);
+```
+
+## ElseRender
+
+```jsx
+const Container = () => (
+  <CanRender when={false}>
+    It will not render
+    <ElseRender>Render when condition is false.</ElseRender>
+  </CanRender>
+);
+```
+
+## ElseCanRender
+
+```jsx
+const Container = () => (
+  <CanRender when={false}>
+    It will not render
+    <ElseCanRender when={true}>
+      Render when condition is false of parent and condition for it is true.
+    </ElseCanRender>
+    <ElseRender>It will not render.</ElseRender>
+  </CanRender>
+);
 
 ## Run tests
 
@@ -56,7 +92,7 @@ yarn test
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/icastro085/react-canrender/issues). You can also take a look at the [contributing guide](https://github.com/icastro085/react-canrender/blob/master/CONTRIBUTING.md).
+Feel free to check [issues page](https://github.com/icastro085/react-canrender/issues). You can also take a look at the [contributing guide](https://github.com/icastro085/react-canrender/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -67,7 +103,7 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2021 [Ivanildo de Castro <ivanildo.decastro085@gmail.com>](https://github.com/icastro085).
 
-This project is [MIT](https://github.com/icastro085/react-canrender/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/icastro085/react-canrender/blob/main/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
