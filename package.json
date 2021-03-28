@@ -1,10 +1,13 @@
 {
   "name": "@icastro085/react-canrender",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "author": "Ivanildo de Castro <ivanildo.decastro085@gmail.com>",
   "license": "MIT",
-  "keywords": ["react", "typescript"],
+  "keywords": [
+    "react",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/icastro085/react-canrender.git"
