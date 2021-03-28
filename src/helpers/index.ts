@@ -32,6 +32,6 @@ export const whenResolve = ({
     return render;
   }
 
-  const firstElseCanRender = elseCanRender.find(({ props }: any) => props?.when);
+  const firstElseCanRender = elseCanRender?.find(({ props }: any) => props?.when);
   return firstElseCanRender || elseRender;
 };
