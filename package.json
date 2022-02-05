@@ -20,7 +20,7 @@
     "coverage": "yarn test --coverage",
     "lint": "eslint src --ext js,ts,tsx",
     "build": "webpack --config webpack.prod.js && yarn build:declarations",
-    "build:declarations": " tsc --project ./tsconfig.json",
+    "build:declarations": " tsc --project ./tsconfig-build.json",
     "release": "standard-version",
     "typecheck": "tsc --noEmit",
     "prepare": "install-peers"
@@ -33,7 +33,7 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime-corejs2": "^7.13.10",
-    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.37",

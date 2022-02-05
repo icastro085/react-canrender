@@ -1,5 +1,3 @@
-export { ICanRenderProps } from './interfaces/ICanRenderProps';
-export { IElseRenderProps } from './interfaces/IElseRenderProps';
-export { CanRender } from './CanRender';
-export { ElseCanRender } from './ElseCanRender';
-export { ElseRender } from './ElseRender';
+export {
+  CanRender, ElseCanRender, ElseRender, ICanRenderProps, IElseRenderProps,
+} from './CanRender';
