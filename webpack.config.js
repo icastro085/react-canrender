@@ -28,7 +28,7 @@ const config = {
 
   resolve: {
     extensions,
-    plugins: [new TsconfigPathsPlugin({ configFile: path.resolve(__dirname, 'tsconfig.json') })],
+    plugins: [new TsconfigPathsPlugin({ configFile: path.resolve(__dirname, 'tsconfig-build.json') })],
   },
 };
 

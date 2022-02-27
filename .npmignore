@@ -1,9 +1,13 @@
 jest.config.js
 tsconfig.json
+tsconfig-build.json
 webpack.config.js
 webpack.prod.js
+codecov.yml
 .github
 .babelrc
 .eslintrc
 yarn-error.log
 src
+test
+__coverage__
